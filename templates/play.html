@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Enter in the required words by type indicated to get the story...</h2>
+
+<form id = "madlib-form" action="/finish">
+<ul>
+{% for prompt in prompts %}
+
+<li><input type = "text" name = "{{prompt}}" placeholder = "{{prompt}}"/></li>
+
+{% endfor %}
+
+<li><input type="submit"/></li>
+</ul>
+</form>
+
+{% endblock %}

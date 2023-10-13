@@ -1,0 +1,3 @@
+venv/
+old-requirements.txt
+__pycache__/
